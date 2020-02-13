@@ -1,9 +1,9 @@
 import os
 from PIL import Image
 
-entries = os.listdir('./validation')
+entries = os.listdir('./training')
 for entry in entries:
-	file = './validation/' + entry
+	file = './training/' + entry
 	out = './out/' + entry
 	img = Image.open(file)
 	img = img.resize((256, 256), Image.ANTIALIAS)
